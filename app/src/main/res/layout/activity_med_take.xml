@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Reminder.Med_take"
+    android:background="@drawable/wp">
+
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_marginTop="30dp"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:hint="Medicine Name"/>
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_marginTop="30dp"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_below="@+id/tv_name"
+        android:textColor="@color/black"
+        android:hint="Alarm Time"/>
+    <TextView
+        android:id="@+id/tv_medNum"
+        android:layout_marginTop="30dp"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_below="@+id/tv_time"
+        android:textColor="@color/black"
+        android:hint="Medicine Number"/>
+    <TextView
+        android:id="@+id/tv_medType"
+        android:layout_marginTop="30dp"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_below="@+id/tv_medNum"
+        android:textColor="@color/black"
+        android:hint="Medicine Type"/>
+    <TextView
+        android:id="@+id/tv_medInteraval"
+        android:layout_marginTop="30dp"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_below="@+id/tv_medType"
+        android:textColor="@color/black"
+        android:hint="Medicine Interval"/>
+
+    <Button
+        android:id="@+id/btnMedtake"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_medInteraval"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="20dp"
+        android:text="Click Me !  Pin to History" />
+
+</RelativeLayout>

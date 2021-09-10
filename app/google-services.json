@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "422143977637",
+    "project_id": "medqx-67ced",
+    "storage_bucket": "medqx-67ced.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:422143977637:android:a14e4b0478dbd14e3a854c",
+        "android_client_info": {
+          "package_name": "com.example.medqx"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "422143977637-m24m9iujv7tfvesj2lkgtl3sn9igdomo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZs8XUY_XPNh1WBifvBpOeDUD54LLtUjI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "422143977637-m24m9iujv7tfvesj2lkgtl3sn9igdomo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

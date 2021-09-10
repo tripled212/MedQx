@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Reminder.SimpleAlarm"
+    android:background="@drawable/wp">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/imageView"
+        android:layout_width="198dp"
+        android:layout_height="68dp"
+        android:paddingTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.071"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022"
+        app:srcCompat="@drawable/li_med_with_text" />
+
+    <EditText
+        android:id="@+id/etMed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_marginTop="66dp"
+        android:fontFamily="@font/anonymous_pro"
+        android:hint="Medicine Name"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="30dp"
+
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.136" />
+
+    <TimePicker
+        android:id="@+id/timePicker"
+        android:layout_width="match_parent"
+        android:layout_height="196dp"
+        android:layout_below="@id/etMed"
+        android:layout_marginTop="16dp"
+        android:timePickerMode="spinner"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etMed"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/med_take"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/timePicker"
+        android:layout_marginTop="26dp"
+        android:fontFamily="@font/anonymous_pro"
+        android:hint="Number of Medicine"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timePicker"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Spinner
+        android:id="@+id/sp_typeofMed"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/med_take"
+        app:layout_constraintVertical_bias="0.056"
+        tools:layout_editor_absoluteX="0dp"
+        android:layout_below="@id/med_take"/>
+
+    <Spinner
+        android:id="@+id/sp_interval"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sp_typeofMed"
+        app:layout_constraintVertical_bias="0.157"
+        tools:layout_editor_absoluteX="-16dp"
+
+        android:layout_below="@id/sp_typeofMed"/>
+
+    <Button
+        android:id="@+id/btnSetAlarm"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_below="@id/sp_interval"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#ED7117"
+        android:fontFamily="@font/anonymous_pro"
+        android:text="Set Alarm"
+        android:textColor="@color/black"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sp_interval"
+        app:layout_constraintVertical_bias="0.09"
+        tools:layout_editor_absoluteX="0dp" />
+
+
+</RelativeLayout>
+
+</ScrollView>
